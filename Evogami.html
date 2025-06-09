@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/Evogami.css"/>
+</head>
+<body>
+
+ 
+    <h1 class="name">Janna<br>Al-Hashimy</h1> <!--This is the floating name that appears at the top of the screen -->
+
+    <nav class="navbar"> <!-- this is the navigation bar that contains links to various pages. This particular class is the outer most container and contains
+                                an inner container to hold the links-->
+        <div class="navbar_container"> <!-- this is the inner container of the navigation bar -->
+                <ul class="navbar_menu"> <!-- this class is the general menu of the navigation links. This contains the styling and layout of the links -->
+                    <li class="navbar_item"> <!-- this class is the actual links and pertains to the styling of the links themselves -->
+                        <a class="navbar_links" href="index.html">PROJECTS</a> <!-- the names of the links in order (project, about, resume) -->
+                    </li>
+                    <li class="navbar_item">
+                        <a class="navbar_links" href=".html">ABOUT</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a class="navbar_links" href=".html">RESUME</a>
+                    </li> 
+                </ul> <!-- end of navbar_menu class -->
+        </div> <!-- end of navbar class -->
+
+
+
+    </nav>
+
+    <img src="/Images/evogamiBanner.png" class="evogamiBanner"> <!-- this is the banner of evogami that is displayed -->
+
+    <img class="evogamiGif" src="/Images/Evogami1.gif" tabindex="0"> <!-- this is the gif that is displayed of evogami -->
+
+    <div class="evogamiPlay"> <!-- evogamiPlay contains the information on how to play the game, along with a button that links to the itch.io -->
+        <h3>Play the game on Itch!</h3>
+       <a href="https://tenfold-games.itch.io/evogami" target="_blank"> <img src="/Images/evogamiBanner.png"> </a> <!-- external link to itch.io -->
+    </div> <!-- end of evogamiPlay -->
+
+
+    <div class="summaryContainer"> <!-- The summaryContainer contains all the information regarding the summary of evogami's work. it includes roles, as well as a short
+                                        paragraph of what the project was about. -->
+        <div class="summaryContent"> <!-- the inner container of the summary's content -->
+            <div class="rolesContainer"> <!-- the roles container contains all the information on the role of the project. it contains its own syntax, which is why it has its own class-->
+                <p >2024 | 4 months | Unity </p>
+                <p ><strong>Role: </strong>3D Artist</p>
+                <p tabindex="0"><strong>Team Size: </strong>12</p>
+            </div> <!-- end of roles container -->
+
+        <p class="summary" tabindex="0">Evogami is a cozy 3D platformer where you play as different forms of paper 
+            to navigate through the level. Use your frog form to pull objects, the crab's 
+            snipping ability to cut through things and transform into a ninja star to launch 
+            yourself to certain areas of the wall. Along with traversing through the level, 
+            cranes are scattered around the room for you to collect for the goal of helping the creator feel better</p> <!-- a paragraph of a short summary of the project -->
+        </div> <!-- end of summary content -->
+    </div> <!-- end of summary container -->
+
+    <div class="moodboard"> <!-- the outer container of the moodboard -->
+        <div class="moodboardContainer"> <!-- inner container that holds the moodboard -->
+        <h2>Moodboard</h2>
+        <img src="/Images/MoodBoard.png" tabindex="0"> <!-- image of the moodboard -->
+        </div> <!-- end of moodboard container -->
+    </div> <!-- end of moodboard class -->
+
+    <div class="envContainer"> <!-- outer container of the environment design, which contains a paragraph of the environment's design-->
+        <div class="envContent"> <!-- the inner container -->
+            <h2 tabindex="0">Environment Design</h2> <!-- title -->
+            <p tabindex="0">As one of the two 3D artists on the team, I contributed to creating a children's 
+                bedroom environment inspired by the styles of Toybox from Kingdom Hearts and It Takes Two. 
+                All assets were modeled in <strong>Maya</strong> and textured using <strong>Substance Painter</strong>. For Evogami, we focused 
+                on a simplified, stylized aesthetic where furniture and props were intentionally oversized to 
+                evoke the feeling of experiencing the world from the perspective of an origami figure navigating 
+                real-world objects.</p> <!-- paragraph of environment design -->
+        </div>
+    </div>
+
+        <div class="assetsContainer"> <!-- outer container of all the images contained -->
+            <div class="assetsContent"> <!-- inner container -->
+                <h2 tabindex="0">Assets Made</h2> <!-- title -->
+                <img src="/Images/JarEvo.png" tabindex="0"> <!-- images -->
+                <img src="/Images/Thumb.png" >
+                <img src="/Images/dresser.png" tabindex="0">
+                <img src="/Images/lamp.png">
+                <img src="/Images/chair.png" tabindex="0">
+                <img src="/Images/brush.png" >
+                <img src="/Images/car.png" tabindex="0">
+                <img src="/Images/closet.png">
+                <img src="/Images/essal.png" tabindex="0">
+                <img src="/Images/chair.png" >
+                <img src="/Images/lamp2.png" tabindex="0">
+                <img src="/Images/plant.png">
+            </div> <!-- end of assetsContent -->
+        </div> <!-- end of assetsContainer-->
+
+        <div class="slider"> <!-- this is a outer container class that contains the  image slideshow. -->
+            <div class="slides"> <!-- this is the inner container of the slideshow. this is important as it will be used in our evogami.js file to make the slideshow interactive -->
+                <h2 tabindex="0">CNE Showcase</h2> <!-- title  -->
+                <p tabindex="0">Evogami had the opportunity to be showcased at the gaming garage at the Canadian National Exhibit. 
+                It was a great experience watching others play the game.</p> <!-- short description of the slideshow -->
+                <img class="slide" src="/Images/Janna1.png"> <!-- the images -->
+                <img class="slide" src="/Images/Janna2.png">
+                <img class="slide" src="/Images/Janna3.png">
+                <img class="slide" src="/Images/Janna4.png">
+                <img class="slide" src="/Images/Janna5.png">
+
+                <div class="buttonsContainer"> <!-- the container that has the buttons needed to show the slides -->
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <button class="next" onclick="nextSlide()">&#10095</button>
+                </div> <!-- end of buttons container -->
+
+            </div> <!-- end of slides -->
+         </div> <!-- end of slider -->
+
+
+
+    
+     <footer>
+        <hr>
+
+        <div class="smIcons"> <!-- this class cotains our social media icons -->
+           <a href="https://www.artstation.com/alhashimyjanna" target="_blank"> <img src="/Images/artStation.jpg"> </a> <!-- the icons -->
+          <a href="https://x.com/janna_alh?s=21" target="_blank"><img src="/Images/twitter.jpg">  </a>
+          <a href='https://www.linkedin.com/in/janna-al-hashimy-0a2545204/' target="_blank"> <img src="/Images/LinkedIn.jpg"> </a>
+            <a href="mailto:alhashimy.janna@gmail.com" target="_blank"><img src="/Images/email.jpg"></a>
+
+        </div> <!-- end of SmIcons -->
+
+    </footer> 
+    <script src="/JS/Evogami.js"></script> <!-- the script to our javascript file -->
+</body>
+</html>

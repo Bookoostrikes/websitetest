@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+body{
+    background-color: #e1d1d2;
+}
+
+.navbar { /* this affects EVERYTHING within the navbar*/
+    display: flex;
+    background-color: hsl(158, 100%, 32%);
+    box-shadow: BLACK 5px 3px 5px;
+    border-radius: 50px;
+    height: 40px;
+    width: 25%;
+    min-width: 400px;
+    justify-content: center;
+    font-size: 2rem;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+.name{
+    position:fixed;
+    left: 0%;
+    text-align: left;
+
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+}
+.navbar_links {
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+
+.evogamiBanner{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.evogamiGif{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.summaryContainer{ 
+    padding: 20px 0;
+    max-width: 1300px;
+    margin: auto; 
+    background-color: #e7dbdc;
+}
+
+.summaryContent{
+    margin: 20px 200px;
+}
+
+.rolesContainer{
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 20px 0;
+
+}
+
+
+.summary{
+    font-size: 1.5rem;
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 2.5rem;
+}
+
+.evogamiPlay{
+    padding: 20px 0;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(231, 219, 220);
+    max-width: 1300px;
+
+
+}
+
+.evogamiPlay h3{
+    font-size: 2rem;
+}
+
+.evogamiPlay img{
+    width: 20%;
+    border-radius: 300px;
+    border: 2px solid black;
+}
+
+.moodboard{
+    max-width: 1300px;
+    margin: auto;
+    background-color: #e7dbdc;
+}
+
+.moodboardContainer{
+    margin: 20px 200px;
+}
+
+.moodboard h2{
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+
+.moodboard img{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.envContainer{
+    max-width: 1300px;
+    margin: auto;
+    background-color: #e7dbdc;
+}
+
+.envContent{
+    margin: 20px 200px;
+}
+
+.envContent p{
+    font-size: 1.5rem;
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 2.5rem;
+    padding: 20px 0;
+
+}
+
+.envContent h2{
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+
+.assetsContainer{
+    max-width: 1300px;
+    margin: auto;
+    background-color: #e7dbdc;
+    text-align: left;
+}
+
+.assetsContent img{
+    width: 33%;
+    display: inline-block;
+    margin: auto;
+
+}
+
+.assetsContent{
+    margin: 20px 200px;
+}
+
+
+.assetsContent h2{
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+
+.slider{
+    max-width: 1300px;
+    background-color: #e7dbdc;
+    margin: auto;
+}
+
+.slides{
+    margin: 20px 200px;
+
+}
+
+
+
+.slider img{
+    width: 75%;
+    display: none;
+    margin: auto;
+
+}
+
+.slider h2{
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+
+.slider p{
+    font-size: 1.5rem;
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 2.5rem;
+    padding: 20px 0;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade{
+
+from {opacity: .5;}
+
+to {opacity: 1;}
+
+}
+
+.buttonsContainer{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.buttonsContainer button{
+    color: red;
+    margin: 0 20px;
+    min-width: 48px;
+    min-height: 48px;
+    width: 5%;
+}
+
+footer{
+        margin-top: 20px;
+        text-align: center;
+}
+
+footer hr{
+    box-shadow:black 1px -2px 1px;
+    width: 100%;
+}
+
+.smIcons img{
+    margin: 20px;
+}
+
+@media screen and (max-width: 1200px){
+
+    .assetsContainer{
+    text-align: center;
+}
+
+.assetsContent img{
+    width: 45%;
+}
+
+.assetsContent{
+    margin: 20px 20px;
+}
+
+}
+
+@media screen and (max-width: 760px){
+    .name{
+display: none;
+}
+
+
+
+.evogamiBanner{
+    width: 100%;
+}
+
+.evogamiGif{
+    width: 90%;
+}
+
+.summaryContainer{
+    padding: 20px 0;
+    max-width: 760px;
+}
+
+.summaryContent{
+    margin: 20px 20px;
+}
+
+.rolesContainer{
+    font-size: 2rem;
+    margin: 20px 0;
+    padding: 20px 0;
+
+}
+
+
+.summary{
+    font-size: 2rem;
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 2.5rem;
+}
+
+.evogamiPlay{
+    max-width: 760px;
+
+
+}
+
+.evogamiPlay h3{
+    font-size: 3rem;
+}
+
+.evogamiPlay img{
+    width: 50%;
+
+}
+
+.moodboard{
+    max-width: 760px;
+
+}
+
+.moodboardContainer{
+    margin: 20px 20px;
+}
+
+.moodboard h2{
+    font-size: 3rem;
+    padding-top: 40px;
+}
+
+.moodboard img{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.envContainer{
+    max-width: 760px;
+}
+
+.envContent{
+    margin: 20px 20px;
+}
+
+.envContent p{
+    font-size: 2rem;
+}
+
+.assetsContainer{
+    max-width: 760px;
+    text-align: center;
+}
+
+.assetsContent img{
+    width: 45%;
+}
+
+.assetsContent{
+    margin: 20px 20px;
+}
+
+
+.assetsContent h2{
+    font-size: 3rem;
+}
+
+.envContent h2{
+    font-size: 3rem;
+}
+
+.slider{
+    max-width: 760px;
+
+}
+
+.slides{
+    margin: 20px 20px;
+
+}
+
+
+
+.slider img{
+    width: 90%;
+
+
+}
+
+.slider h2{
+    font-size: 3rem;
+}
+
+.slider p{
+    font-size: 2rem;
+
+}
+
+}

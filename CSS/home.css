@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+.mobile{
+    display: none;
+}
+
+
+.navbar { /* this affects EVERYTHING within the navbar*/
+    display: flex;
+    background-color: hsl(158, 100%, 32%);
+    box-shadow: BLACK 5px 3px 5px;
+    border-radius: 50px;
+    height: 40px;
+    width: 25%;
+    min-width: 400px;
+    justify-content: center;
+    font-size: 2rem;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+.name{
+    position:fixed;
+    left: 0%;
+    text-align: left;
+
+}
+
+.navbar_container {
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+}
+.navbar_links {
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+
+.role{
+    display: flex;
+justify-content: center;
+}
+
+.images-container{
+    text-align: center;
+}
+
+.images{
+    display:inline-block;
+    width: 700px;
+    margin: 10px;
+    box-shadow: BLACK 3px 3px 10px;
+}
+
+.imgWrapper{
+    display:inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+#evogamiVid{
+    position: absolute;
+    left: 0%;
+    width: 98%;
+    opacity: 0;
+}
+
+.flexBox{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(239, 245, 128);
+    rotate: 5deg;
+    opacity: 0;
+    z-index: 2;
+    bottom: 0%;
+    right: 0%;
+    transition: 0.5s;
+}
+
+.description{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.role{
+    font-weight: bold;
+}
+
+.title{
+    font-weight: bold;
+}
+
+#evogami{
+    opacity: 1;
+}
+
+
+#evogamiVid:hover{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+footer{
+        margin-top: 20px;
+        text-align: center;
+}
+
+footer hr{
+    box-shadow:black 1px -2px 1px;
+    width: 100%;
+}
+
+.smIcons img{
+    margin: 20px;
+}
+
+@media (max-width: 1460px){
+    .images{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:760px) {
+
+    .name, .navbar{
+    display: none;
+}
+
+.mobile{
+    display: block;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+}
+
+    .images{
+    display:inline-block;
+    width: 90%;
+    margin: 10px;
+    box-shadow: BLACK 3px 3px 10px;
+}
+
+.off-screen-menu{
+    background-color: #ffa8b2;
+    width: 100%;
+    max-width: 760px;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    top: -760px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: all .5s ease;
+    z-index: 999;
+    margin-top: 80px;
+    box-shadow: rgb(98, 98, 98) 20px 7px 8px;
+    margin-right: auto;
+
+}
+
+.off-screen-menu.active{
+    top: 0;
+    opacity: 1;
+}
+
+.mobileNav{
+    padding: 1rem;
+    display: flex;
+    background-color: #ffa8b8;
+    box-shadow: rgb(98, 98, 98) 1px 7px 18px;
+
+}
+
+.mobile_menu{
+        list-style: none;
+}
+
+.mobile_links {
+    color: red;
+    font-size: 48px;
+    text-decoration: none;
+    padding: 0 1rem;
+    display: block;
+}
+
+.mobile_item{
+        background-color: #f696a8;
+        padding: 25px;
+        transition: .5s ease;
+
+}
+
+.mobile_item:hover{
+        background-color: #f87e94;
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all .5s ease;
+
+
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2){
+opacity: 0;
+}
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+}
