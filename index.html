@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" type="text/css" href="CSS/home.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/HeaderFooter.css"/>
+
 </head>
 <body>
  
@@ -17,10 +19,10 @@
                     <a class="navbar_links" href="index.html">PROJECTS</a>
                 </li>
                 <li class="navbar_item">
-                    <a class="navbar_links" href=".html">ABOUT</a>
+                    <a class="navbar_links" href="About.html">ABOUT</a>
                 </li>
                 <li class="navbar_item">
-                    <a class="navbar_links" href=".html">RESUME</a>
+                    <a class="navbar_links" href="Resume.html">RESUME</a>
                 </li>
             </ul>
         </div>
@@ -42,10 +44,10 @@
                     <a class="mobile_links" href="index.html">PROJECTS</a>
                 </li>
                 <li class="mobile_item">
-                    <a class="mobile_links" href=".html">ABOUT</a>
+                    <a class="mobile_links" href="About.html">ABOUT</a>
                 </li>
                 <li class="mobile_item">
-                    <a class="mobile_links" href=".html">RESUME</a>
+                    <a class="mobile_links" href="Resume.html">RESUME</a>
         </ul>
     </div>
 
@@ -58,28 +60,38 @@
         <h2 class="role">Game Designer</h2>
     </div>
 
+    <section class="homeHeading">
+    <h3>My Projects</h3>
+    <hr>
+</section>
 
     <div class="images-container">
         <div class="imgWrapper">
-        <a href="Soul.html"><img src="Images/Soul.png" class="images"></a>
+        <a href='Soul.html'><img src="Images/Soul.png" class="images" id="soul"></a>
+        <a href='Soul.html' tabindex='-1'><img src="Images/SoulGif.gif" class="images" id="soulVid"></a>
+        <div class="flexBox" id="soulFlex">
+            <h2 class="title">Soul Syphon</h2>
+            <h3 class="role">3D Artist</h2>
+            <p class="description">Prove your existence in this single player FPS where you posssess enemies to survive!</p></div>
     </div>
 
         <div class="imgWrapper">
-        <a href='Quest.html'> <img src="Images/Quest.png" class="images"> </a>
+            <a href='Quest.html'><img src="Images/Quest.png" class="images" id="quest"></a>
+            <a href='Quest.html' tabindex='-1'><img src="Images/game2.gif" class="images" id="questVid"></a>
+              <div class="flexBox" id="questFlex">
+                  <h2 class="title">Quest For The Lost Relic</h2>
+                  <h3 class="role">Solo Dev</h2>
+                  <p class="description"> Journey through the Desert Dunes in this UEFN level</p></div>
     </div>
 
-
-        <div class="imgWrapper">
-        <a href='Evogami.html'><img src="Images/Evogami.png" class="images"></a>
-        </div>
 
         <div class="imgWrapper">
        <a href='Evogami.html'><img src="Images/Evogami.png" class="images" id="evogami"></a>
       <a href='Evogami.html' tabindex='-1'><img src="Images/Evogami1.gif" class="images" id="evogamiVid"></a>
-        <div class="flexBox">
+        <div class="flexBox" id="evoFlex">
             <h2 class="title">Evogami</h2>
             <h3 class="role">3D Artist</h2>
-            <p class="description"> Step into the world of origami and do some gangshi! kidding!</p></div>
+            <p class="description"> Step into the world of origami and solve puzzles as different origami creations</p></div>
        </div>
     </div>
 

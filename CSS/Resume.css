@@ -1,0 +1,24 @@
+
+.resume{
+    text-align: center;
+}
+
+.resume embed{
+    width: 50vw;
+    height: 75vh;
+}
+
+
+
+
+
+@media screen and (max-width:760px) {
+
+
+.resume embed{
+    margin: 30px 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+}

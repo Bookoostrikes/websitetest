@@ -20,10 +20,22 @@ let landscapeintervalID = null;
 let levelBeat = document.querySelector(`.levelBeat`);
 let flowButton = document.querySelector(`.flowButton`);
 
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
 
 document.addEventListener("DOMContentLoaded", initializeSlider);
 document.addEventListener("DOMContentLoaded", templeEinitializeSlider);
 document.addEventListener("DOMContentLoaded", templeIinitializeSlider);
+
+
+
+hamMenu.addEventListener('click', function(){
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+
+});
+
 
 
 

@@ -10,52 +10,25 @@ body{
 
 }
 
-.mobile{
-    display: none;
-}
-
-
-.navbar { /* this affects EVERYTHING within the navbar*/
-    display: flex;
-    background-color: hsl(158, 100%, 32%);
-    box-shadow: BLACK 5px 3px 5px;
-    border-radius: 50px;
-    height: 40px;
-    width: 25%;
-    min-width: 400px;
-    justify-content: center;
-    font-size: 2rem;
-    position: sticky;
-    top: 0%;
-    z-index: 999;
-    margin: 0 auto;
-}
-
-.name{
-    position:fixed;
-    left: 0%;
-    text-align: left;
-
-}
-
-.navbar_container {
-}
-
-.navbar_menu{
-    display: flex;
-    list-style: none;
-}
-.navbar_links {
-    color: red;
-    font-size: 25px;
-    text-decoration: none;
-    padding: 0 1rem;
-}
-
-
 .role{
     display: flex;
 justify-content: center;
+}
+
+.homeHeading{
+    margin: 20px 0;
+
+}
+
+.homeHeading h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.homeHeading hr{
+    box-shadow:black 1px -2px 1px;
+    width: 100%;
 }
 
 .images-container{
@@ -76,11 +49,58 @@ justify-content: center;
     height: auto;
 }
 
+#soulVid{
+    position: absolute;
+    left: 0%;
+    width: 98%;
+    opacity: 0;
+}
+
+
+#soul{
+    opacity: 1;
+}
+
+
+#soulVid:hover{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#questVid{
+    position: absolute;
+    left: 0%;
+    width: 98%;
+    opacity: 0;
+}
+
+
+#quest{
+    opacity: 1;
+}
+
+
+#questVid:hover{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
 #evogamiVid{
     position: absolute;
     left: 0%;
     width: 98%;
     opacity: 0;
+}
+
+
+#evogami{
+    opacity: 1;
+}
+
+
+#evogamiVid:hover{
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 .flexBox{
@@ -95,6 +115,7 @@ justify-content: center;
     right: 0%;
     transition: 0.5s;
 }
+
 
 .description{
     text-align: left;
@@ -112,15 +133,6 @@ justify-content: center;
     font-weight: bold;
 }
 
-#evogami{
-    opacity: 1;
-}
-
-
-#evogamiVid:hover{
-    opacity: 1;
-    transition: all 0.5s;
-}
 
 
 footer{
@@ -145,17 +157,6 @@ footer hr{
 
 @media screen and (max-width:760px) {
 
-    .name, .navbar{
-    display: none;
-}
-
-.mobile{
-    display: block;
-    position: sticky;
-    top: 0%;
-    z-index: 999;
-}
-
     .images{
     display:inline-block;
     width: 90%;
@@ -163,104 +164,5 @@ footer hr{
     box-shadow: BLACK 3px 3px 10px;
 }
 
-.off-screen-menu{
-    background-color: #ffa8b2;
-    width: 100%;
-    max-width: 760px;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    top: -760px;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: all .5s ease;
-    z-index: 999;
-    margin-top: 80px;
-    box-shadow: rgb(98, 98, 98) 20px 7px 8px;
-    margin-right: auto;
 
-}
-
-.off-screen-menu.active{
-    top: 0;
-    opacity: 1;
-}
-
-.mobileNav{
-    padding: 1rem;
-    display: flex;
-    background-color: #ffa8b8;
-    box-shadow: rgb(98, 98, 98) 1px 7px 18px;
-
-}
-
-.mobile_menu{
-        list-style: none;
-}
-
-.mobile_links {
-    color: red;
-    font-size: 48px;
-    text-decoration: none;
-    padding: 0 1rem;
-    display: block;
-}
-
-.mobile_item{
-        background-color: #f696a8;
-        padding: 25px;
-        transition: .5s ease;
-
-}
-
-.mobile_item:hover{
-        background-color: #f87e94;
-}
-
-.ham-menu{
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
-}
-
-.ham-menu span{
-    height: 5px;
-    width: 100%;
-    background-color: black;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    z-index: 1000;
-    transition: all .5s ease;
-
-
-}
-
-.ham-menu span:nth-child(1){
-    top: 25%;
-}
-
-.ham-menu span:nth-child(3){
-    top: 75%;
-}
-
-.ham-menu.active span:nth-child(1){
-    top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-}
-.ham-menu.active span:nth-child(2){
-opacity: 0;
-}
-.ham-menu.active span:nth-child(3){
-    top: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
-}
 }

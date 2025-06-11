@@ -9,39 +9,7 @@ body{
     background-color: #e1d1d2;
 }
 
-.navbar { /* this affects EVERYTHING within the navbar*/
-    display: flex;
-    background-color: hsl(158, 100%, 32%);
-    box-shadow: BLACK 5px 3px 5px;
-    border-radius: 50px;
-    height: 40px;
-    width: 25%;
-    min-width: 400px;
-    justify-content: center;
-    font-size: 2rem;
-    position: sticky;
-    top: 0%;
-    z-index: 999;
-    margin: 0 auto;
-}
 
-.name{
-    position:fixed;
-    left: 0%;
-    text-align: left;
-
-}
-
-.navbar_menu{
-    display: flex;
-    list-style: none;
-}
-.navbar_links {
-    color: red;
-    font-size: 25px;
-    text-decoration: none;
-    padding: 0 1rem;
-}
 
 
 .evogamiBanner{
@@ -232,20 +200,6 @@ to {opacity: 1;}
     width: 5%;
 }
 
-footer{
-        margin-top: 20px;
-        text-align: center;
-}
-
-footer hr{
-    box-shadow:black 1px -2px 1px;
-    width: 100%;
-}
-
-.smIcons img{
-    margin: 20px;
-}
-
 @media screen and (max-width: 1200px){
 
     .assetsContainer{
@@ -263,9 +217,6 @@ footer hr{
 }
 
 @media screen and (max-width: 760px){
-    .name{
-display: none;
-}
 
 
 

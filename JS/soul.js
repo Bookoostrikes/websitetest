@@ -2,6 +2,16 @@ const lab1 = document.querySelector('#lab1');
 const lab2 = document.querySelector('#lab2');
 const transitionButton = document.querySelector('.transitionButton');
 
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+hamMenu.addEventListener('click', function(){
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+
+});
+
+
 function transition(){
 
     

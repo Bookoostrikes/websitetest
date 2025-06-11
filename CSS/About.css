@@ -1,0 +1,44 @@
+
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+
+.hrRule{
+    box-shadow:black 1px -2px 1px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+.aboutMe{
+    display: flex;
+    margin-right: 200px;
+}
+
+
+.myPhoto{
+    width: 315px;
+    height: 409px;
+}
+
+.sprite{
+}
+
+.aboutMe p{
+    font-size: 2rem;
+
+}
+
+
+
+@media screen and (max-width:860px) {
+
+.aboutMe{
+    display: inline-block;
+    text-align: center;
+    margin-right: 0px;
+}
+}

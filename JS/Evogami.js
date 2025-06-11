@@ -2,7 +2,19 @@ const slides = document.querySelectorAll('.slides img');
 let slideIndex = 0;
 let intervalID = null;
 
+const hamMenu = document.querySelector('.ham-menu');
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+
+
+
 document.addEventListener("DOMContentLoaded", initializeSlider);
+
+hamMenu.addEventListener('click', function(){
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+
+});
 
 function initializeSlider(){
     if(slides.length > 0){
