@@ -112,20 +112,25 @@
         </div>
     </div>
 
-    <div class="lab1Container">
-        <div class="lab1Content">
-            <h2 tabindex="0">Containment Chamber</h2>
-            <img src="Images/SoulRoom1.png" class="labSlide" id="lab1" tabindex="0">
-            <img src="Images/SoulRoom2.png" class="labSlide" id="lab2" tabindex="0">
-            <div class="labButtonContainer">
-            <button onclick="transition()" class="transitionButton">Before</button>
-            </div>
+<section class="beforeAfter">
+    <h2 tabindex="0">Containment Chamber</h2>  
+    <div class="container">
+        <div class="img-container"> 
+            <img src="Images/SoulRoom1.png" class="imgbf slider-image">
+            <img src="Images/SoulRoom2.png" class="imgaf slider-image">
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" aria-label="Percentage of before photo shown">
+        <div class="slider-line"> </div>
+            <div class="slider-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg>
+            
         </div>
     </div>
+</section>
 
 
 
-    </nav>
+
 
       <footer>
         <hr>

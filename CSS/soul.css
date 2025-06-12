@@ -146,71 +146,94 @@ img.displaySlide{
 }
 
 
+.beforeAfter img{
+    display: block;
+    max-width: 100%;
+}
 
-.lab1Container{
+.beforeAfter{
+    display: grid;
+    place-items: center;
+    background-color: #e6e2e2;
     max-width: 1300px;
     margin: auto;
-    background-color: #e6e2e2;
-    
 }
 
-.lab1Content img{
-    padding: 20px 0;
-    width: 75%;
-    margin: auto;
-
-}
-
-.lab1Content{
-    margin: 20px 20px;
-    position: relative;
-}
-
-
-
-.lab1Content h2{
+.beforeAfter h2{
     font-size: 2.5rem;
     padding: 20px 0;
-    text-align: center;
-
 }
 
-img.displaySlide{
-    display: block;
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-
-#lab1{
+.container{
+    display: grid;
+    place-content: center;
     position: relative;
-    left: 12%;
-    transition: all 1s ease-in-out;
-
+    overflow: hidden;
+    border-radius: 1rem;
+    --position: 50%;
+    margin-bottom: 20px;
 }
 
-#lab2{
+
+.img-container{
+    max-width: 800px;
+    max-height: 90vh;
+}
+
+.slider-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.imgbf{
     position: absolute;
-    width: 75%;
-    left: 12%;
+    inset: 0;
+    width: var(--position);
+}
+
+.slider{
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition: all 1s ease-in-out;
 }
 
-
-
-.labButtonContainer{
-    text-align: center;
-    padding: 10px 0;
+.slider:focus-visible ~ .slider-button{
+    outline: 5px solid black;
+    outline-offset: 3px;
 }
 
-.labButtonContainer button{
-    padding: 0 20px;
-    color: red;
-    margin: 0 20px;
-    width: 5%;
-    min-width: 72px;
-    min-height: 48px;
+.slider-line{
+    position: absolute;
+    inset: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: wheat;
+    z-index: 10;
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.slider-button{
+    position: absolute;
+    background-color: wheat;
+    color: black;
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 100;
+    box-shadow: 1px 1px 1px black;
+
 }
 
 

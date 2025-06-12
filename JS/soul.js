@@ -1,35 +1,22 @@
-const lab1 = document.querySelector('#lab1');
-const lab2 = document.querySelector('#lab2');
-const transitionButton = document.querySelector('.transitionButton');
 
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
+
+const container = document.querySelector('.container');
+document.querySelector('.slider').addEventListener('input', (e) =>{
+
+
+
+
+container.style.setProperty('--position', `${e.target.value}%`);
+})
+
 
 hamMenu.addEventListener('click', function(){
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
 
 });
-
-
-function transition(){
-
-    
-    if(transitionButton.textContent == 'After'){
-        lab1.style.opacity = '1';
-        lab2.style.opacity = '0';
-        transitionButton.textContent = 'Before';
-    }
-    else if(transitionButton.textContent == 'Before'){
-        lab1.style.opacity = '0';
-        lab2.style.opacity = '1';
-        transitionButton.textContent = 'After';
-        }
-
-}
-
-
-
 
 const slides = document.querySelectorAll('.artContent img');
 let slideIndex = 0;
